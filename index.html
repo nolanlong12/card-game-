@@ -373,7 +373,7 @@ setInterval(()=>{const l=$$('lt');if(l&&tab=='shop'){const v=Math.ceil((avail()?
 /* ================= CARDVAULT ONLINE LAYER =================
    Paste your Supabase project details below (Project Settings -> API).
    The anon key is safe to expose: row-level security protects the data. */
-const CV={url:'sb_publishable_5ZciuEDrZihpTWqSJtK9HQ_PXuVGiP_',key:'sb_publishable_5ZciuEDrZihpTWqSJtK9HQ_PXuVGiP_'};
+const CV={url:'https://xsxzenvtbljpzqrtbbhp.supabase.co',key:'sb_publishable_5ZciuEDrZihpTWqSJtK9HQ_PXuVGiP_'};
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let sb,READY=false,USER=null,OFF=0,manualOut=false,entering=false,REM=localStorage.getItem('cv_rem')!=='0',subbed=false;
 const store={getItem:k=>localStorage.getItem(k)??sessionStorage.getItem(k),setItem:(k,v)=>(REM?localStorage:sessionStorage).setItem(k,v),removeItem:k=>{localStorage.removeItem(k);sessionStorage.removeItem(k)}};
